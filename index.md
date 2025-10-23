@@ -69,4 +69,51 @@ Add overview...
 ~~~
 
 ## Transfer from GTO to an L1 Halo Orbit in Minimum-Time
-*A couple example & tutorial pages to get you started.*
+
+### Continuation of $s_1$ parameter
+
+~~~
+<div style="text-align: center; margin: 2em 0;">
+    <video width="1000" controls>
+        <source src="/assets/step1_animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p><em>Animation showing the continuation of the s<sub>1</sub> parameter for transfer from GTO to an L1 halo orbit</em></p>
+</div>
+~~~
+
+### Continuation of $s_2$ parameter
+
+~~~
+<div style="text-align: center; margin: 2em 0;">
+    <video width="1000" controls>
+        <source src="/assets/step2_animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p><em>Animation showing the continuation of the s<sub>2</sub> parameter for transfer from GTO to an L1 halo orbit</em></p>
+</div>
+~~~
+
+### Continuation of $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$) parameter
+
+~~~
+<div style="text-align: center; margin: 2em 0;">
+    <video width="1000" controls>
+        <source src="/assets/step3_animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p><em>Animation showing the continuation of the s<sub>&#969;</sub> parameter for transfer from GTO to an L1 halo orbit</em></p>
+</div>
+~~~
+
+### Continuation of $s_\theta$ ($\theta_0 = 2\pi s_\theta$) parameter
+
+~~~
+<div style="text-align: center; margin: 2em 0;">
+    <video width="1000" controls>
+        <source src="/assets/step4_animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p><em>Animation showing the continuation of the s<sub>&#952;</sub> parameter for transfer from GTO to an L1 halo orbit</em></p>
+</div>
+~~~
