@@ -28,15 +28,15 @@ hascode = false
 ~~~
 
 ## Overview
-The animations on this page illustrate our continuation framework for optimal low-thrust trajectory design, which couples pseudo-arclength continuation (PALC) with a stationary-condition–based termination rule. In each stage, we track a zero-curve of a parameterized shooting function and halt exactly when the transversality (stationary) condition for the active continuation parameter is satisfied—yielding an optimal solution to the final desired problem.  
+The animations on this page illustrate our continuation framework for optimal low-thrust trajectory design, which couples pseudo-arclength continuation (PALC) with a stationary-condition–based termination criterion. In each stage, we track a zero-curve of a parameterized shooting function and halt exactly when the transversality (stationary) condition for the active continuation parameter is satisfied—yielding an optimal solution to the final desired problem.  
 
-Results are showcased for two of the three examples from the paper. First, a minimum-fuel transfer between $\text{L}_2$ and $\text{L}_1$ halo orbits, where the videos step through freeing the terminal-halo parameter $(s_1)_f$, the initial-halo parameter $(s_1)_0$, and finally the final time $t_f$; the resulting solution reorganizes thrust/coast structure and exploits the unstable invariant manifolds of the initial L2 halo orbit. Second, a minimum-time transfer from GTO to the $\text{L}_1$ halo manifold, where successive stages free $s_1$, $s_2$, the initial true-longitude parameter $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$), and the initial true anomaly parameter $s_\theta$ ($\theta_0=2\pi s_\theta$). These animations highlight how PALC navigates folds and sensitivity in many-revolution spirals while the termination criterion ensures each stage can progress until reaching the desired optimum. 
+Results are showcased for two of the three examples from the paper. First, a minimum-fuel transfer between $\text{L}_2$ and $\text{L}_1$ halo orbits, where the videos step through freeing the terminal-halo parameter $(s_1)_f$, the initial-halo parameter $(s_1)_0$, and finally the final time $t_f$; the resulting solution reorganizes thrust/coast structure and exploits the unstable invariant manifold of the initial L2 halo orbit. Second, a minimum-time transfer from GTO to an $\text{L}_1$ halo's stable manifold, where successive stages free $s_1$, $s_2$, the initial true-longitude parameter $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$), and the initial true anomaly parameter $s_\theta$ ($\theta_0=2\pi s_\theta$). 
 
 Collectively, the clips make visible how the trajectories and optimal control cost functions change while each parameter is freed from initial “fixed-parameter” solutions to the final desired ones. In each animation, the panels showing the stationary-condition function  (i.e., $c_i$ $i\in\{0,1,2,3\}$) and the corresponding optimal-control cost (i.e., $\Delta m$ or $\Delta t$) include a moving marker that traces the current solution point along the zero curve, synchronized with all other panels.
 
 ## Transfer Between Halo Orbits with Minimum-Fuel
 
-This example corresponds to the minimum-fuel $\text{L}_2$ to $\text{L}_1$ halo orbit transfer discussed in Section IV-B of the paper. The sequence of animations illustrates how the stationary-condition–based continuation method transitions the initial fixed-parameter problem to the fully free final-time formulation. Each stage frees one parameter of the boundary-value problem while pseudo-arclength continuation tracks the corresponding zero-curve and terminates automatically at the transversality point.
+This example corresponds to the minimum-fuel $\text{L}_2$ to $\text{L}_1$ halo orbit transfer discussed in Section IV-B of the paper. The sequence of animations illustrates how the stationary-condition–based continuation method transitions the initial fixed-parameter problem to the desired problem formulation. Each stage frees one parameter of the optimal control problem while pseudo-arclength continuation tracks the corresponding zero-curve and terminates automatically at points satisfying the transversality condition corresponding to the current continuation parameter.
 
 ### Continuation of $(s_1)_f$ parameter
 
@@ -54,7 +54,7 @@ This first stage frees the terminal-halo parameter $(s_1)_f$, allowing the traje
 
 ### Continuation of $s_0$ parameter
 
-The second stage frees the initial-halo parameter $(s_1)_0$, enabling optimization of both the departure from the $\text{L}_2$ orbit and the arrival at the $\text{L}_1$ orbit. As the continuation parameter $(s_1)_0$ is varied, the exit point from the initial halo orbit moves steadily, producing corresponding adjustments in the overall trajectory. Interestingly, the final insertion point on the target halo also shifts to remain optimal—ultimately returning toward the initially prescribed location.
+The second stage frees the initial-halo parameter $(s_1)_0$, enabling optimization of both the departure from the $\text{L}_2$ orbit and the arrival at the $\text{L}_1$ orbit. As the continuation parameter $(s_1)_0$ is varied, the exit point from the initial halo orbit moves steadily, producing corresponding adjustments in the overall trajectory. Interestingly, the final insertion point into the target halo also shifts to remain optimal—ultimately returning toward the initially prescribed location.
 
 ~~~
 <div style="text-align: center; margin: 2em 0;">
@@ -82,7 +82,7 @@ In the final stage, the continuation frees the final-time parameter $t_f$, compl
 
 ## Transfer from GTO to an L1 Halo Orbit in Minimum-Time
 
-This example corresponds directly to the minimum-time GTO→L₁ manifold transfer presented in Section IV-C of the paper. The animations display the evolution of the trajectory throughout the continuation process in which the parameters $s_1$, $s_2$, $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$), and $s_\theta$ ($\theta_0=2\pi s_\theta$) are successively freed. Each stage traces the corresponding zero-curve using pseudo-arclength continuation and terminates automatically when the transversality condition is satisfied. The progression clearly shows how the spiral geometry evolves and the transfer time decreases as the continuation advances toward the optimal minimum-time solution of the desired problem.
+This example corresponds directly to the minimum-time GTO $\text{L}_1$ halo stable manifold transfer presented in Section IV-C of the paper. The animations display the evolution of the trajectory throughout the continuation process in which the parameters $s_1$, $s_2$, $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$), and $s_\theta$ ($\theta_0=2\pi s_\theta$) are successively freed. Each stage traces the corresponding zero-curve using pseudo-arclength continuation and terminates automatically when the transversality condition is satisfied. The progression clearly shows how the spiral geometry evolves and the transfer time decreases as the continuation advances toward the optimal minimum-time solution of the desired problem.
 
 ### Continuation of $s_1$ parameter
 
@@ -100,7 +100,7 @@ The first stage frees $s_1$, transitioning the trajectory to the optimal inserti
 
 ### Continuation of $s_2$ parameter
 
-Freeing $s_2$ then refines the insertion onto the stable manifold. Only modest geometric changes are observed, but the Earth-centered revolutions show slight rotation, and the insertion point shifts closer to Earth, consistent with the incremental improvement reported in the paper and shown in the right panel.
+Freeing $s_2$ then refines the insertion onto the stable manifold. Only modest geometric changes are observed, but the Earth-centered revolutions show slight rotation, and the insertion point shifts closer to Earth, consistent with the increase in $s_2$ and incremental improvement in terms of the cost function as reported in the paper and shown in the right panel.
 
 ~~~
 <div style="text-align: center; margin: 2em 0;">
