@@ -28,11 +28,15 @@ hascode = false
 ~~~
 
 ## Overview
-Add overview...
+The animations on this page illustrate our continuation framework for optimal low-thrust trajectory design, which couples pseudo-arclength continuation (PALC) with a stationary-condition–based termination rule. In each stage, we track a zero-curve of a parameterized shooting function and halt exactly when the transversality (stationary) condition for the active continuation parameter is satisfied—yielding an optimal solution to the final desired problem.  
+
+Results are showcased for two of the three examples from the paper. First, a minimum-fuel transfer between L2 and L1 halo orbits, where the videos step through freeing the terminal-halo parameter $(s_1)_f$, the initial-halo parameter $(s_1)_0$, and finally the final time $t_f$; the resulting solution reorganizes thrust/coast structure and exploits the unstable invariant manifolds of the initial L2 halo orbit. Second, a minimum-time transfer from GTO to the L1 halo manifold, where successive stages free $s_1$, $s_2$, the initial true-longitude parameter $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$), and the initial true anomaly parameter $s_\theta$ ($\theta_0=2\pi s_\theta$). These animations highlight how PALC navigates folds and sensitivity in many-revolution spirals while the termination criterion ensures each stage can progress until reaching the desired optimum. 
+
+Collectively, the clips make visible how the trajectories and optimal control cost functions change while each parameter is freed from initial “fixed-parameter” solutions to the final desired ones.  
 
 ## Transfer Between Halo Orbits with Minimum-Fuel
 
-### Continuation of $s_f$ parameter
+### Continuation of $(s_1)_f$ parameter
 
 ~~~
 <div style="text-align: center; margin: 2em 0;">
