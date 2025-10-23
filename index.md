@@ -40,7 +40,7 @@ Collectively, the clips make visible how the trajectories and optimal control co
 
 ~~~
 <div style="text-align: center; margin: 2em 0;">
-    <video width="800" controls>
+    <video width="1000" controls>
         <source src="/assets/L2_halo_to_L1_halo_sf_continuation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -52,7 +52,7 @@ Collectively, the clips make visible how the trajectories and optimal control co
 
 ~~~
 <div style="text-align: center; margin: 2em 0;">
-    <video width="800" controls>
+    <video width="1000" controls>
         <source src="/assets/L2_halo_to_L1_halo_s0_continuation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -64,7 +64,7 @@ Collectively, the clips make visible how the trajectories and optimal control co
 
 ~~~
 <div style="text-align: center; margin: 2em 0;">
-    <video width="800" controls>
+    <video width="1000" controls>
         <source src="/assets/L2_halo_to_L1_halo_tf_continuation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
