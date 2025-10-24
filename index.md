@@ -48,7 +48,7 @@ This first stage frees the terminal-halo parameter $(s_1)_f$, allowing the traje
         <source src="/assets/L2_halo_to_L1_halo_sf_continuation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <p><em>Animation showing the continuation of the s<sub>f</sub> parameter for transfer between L2 and L1 halo orbits</em></p>
+    <p><em>Animation showing the continuation of the (s<sub>1</sub>)<sub>f</sub> parameter for transfer between L2 and L1 halo orbits</em></p>
 </div>
 ~~~
 
@@ -62,7 +62,7 @@ The second stage frees the initial-halo parameter $(s_1)_0$, enabling optimizati
         <source src="/assets/L2_halo_to_L1_halo_s0_continuation.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <p><em>Animation showing the continuation of the s<sub>0</sub> parameter for transfer between L2 and L1 halo orbits</em></p>
+    <p><em>Animation showing the continuation of the (s<sub>1</sub>)<sub>0</sub> parameter for transfer between L2 and L1 halo orbits</em></p>
 </div>
 ~~~
 
