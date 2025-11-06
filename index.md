@@ -30,9 +30,9 @@ hascode = false
 ## Overview
 The animations on this page illustrate our continuation framework for optimal low-thrust trajectory design, which couples pseudo-arclength continuation (PALC) with a stationary-condition–based termination (SCBT) criterion. In each stage, we track a zero-curve of a parameterized shooting function and halt exactly when the transversality (stationary) condition for the active continuation parameter is satisfied—yielding an optimal solution to the final desired problem.  
 
-Results are showcased for two of the three examples from the paper. First, a minimum-fuel transfer between $\text{L}_2$ and $\text{L}_1$ halo orbits, where the videos step through freeing the terminal-halo parameter $(s_1)_f$, the initial-halo parameter $(s_1)_0$, and finally the final time $t_f$; the resulting solution reorganizes thrust/coast structure and exploits the unstable invariant manifold of the initial L2 halo orbit. Second, a minimum-time transfer from GTO to an $\text{L}_1$ halo's stable manifold, where an initial stage transitions from a local maximum solution of the *initial* problem to a local minimum, before successive stages free  $s_2$, the initial true-longitude parameter $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$), and the initial true anomaly parameter $s_\theta$ ($\theta_0=2\pi s_\theta$). 
+Results are showcased for one of the two examples from the paper; a minimum-fuel transfer between $\text{L}_2$ and $\text{L}_1$ halo orbits, where the videos step through freeing the terminal-halo parameter $(s_1)_f$, the initial-halo parameter $(s_1)_0$, and finally the final time $t_f$. The resulting solution reorganizes thrust/coast structure and exploits the unstable invariant manifold of the initial L2 halo orbit. 
 
-Collectively, the clips make visible how the trajectories and optimal control cost functions change while each parameter is freed from a solution to an *initial* “fixed-parameter” problem to a solution of the *desired* ones. In each animation, the panels showing the SCBT function  (i.e., $c_i$ $i\in\{0,1,2,3\}$) and the corresponding optimal-control cost (i.e., $\Delta m$ or $\Delta t$) include a moving marker that traces the current solution point along the zero curve, synchronized with all other panels.
+Collectively, the clips make visible how the trajectory and optimal control cost function changes while each parameter is freed from a solution to an *initial* “fixed-parameter” problem to a solution of the *desired* one. In each animation, the panels showing the SCBT function  (i.e., $c_i$ $i\in\{0,1,2\}$) and the corresponding optimal-control cost (i.e., $\Delta m$) include a moving marker that traces the current solution point along the zero curve, synchronized with all other panels.
 
 ## Transfer Between Halo Orbits with Minimum-Fuel
 
@@ -80,7 +80,7 @@ In the final stage, the continuation frees the final-time parameter $t_f$, compl
 </div>
 ~~~
 
-## Transfer from GTO to an L1 Halo Orbit in Minimum-Time
+<!-- ## Transfer from GTO to an L1 Halo Orbit in Minimum-Time
 
 This example corresponds directly to the minimum-time GTO $\text{L}_1$ halo stable manifold transfer presented in Section IV-C of the paper. The animations display the evolution of the trajectory throughout the continuation process in which the parameters $s_1$, $s_2$, $s_\omega$ ($\omega_{0,\text{true}}=2\pi s_\omega$), and $s_\theta$ ($\theta_0=2\pi s_\theta$) are adjusted. Each stage traces the corresponding zero-curve using pseudo-arclength continuation and terminates automatically when the transversality condition is satisfied. The progression clearly shows how the spiral geometry evolves and the transfer time decreases as the continuation advances toward the optimal minimum-time solution of the desired problem.
 
@@ -138,4 +138,4 @@ The final stage frees the true-anomaly parameter $s_\theta$, completing the cont
     </video>
     <p><em>Animation showing the continuation of the s<sub>&#952;</sub> parameter for transfer from GTO to an L1 halo orbit</em></p>
 </div>
-~~~
+~~~ -->
